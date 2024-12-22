@@ -36,6 +36,28 @@ img {
     height: auto;
 }
 
+input {
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+textarea {
+    padding: 0;
+    resize: none;
+    outline: none;
+    transition: 0.5s ease-in-out;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
 /* Styles for Mobile devices */
 .container {
     min-width: 320px;
@@ -91,10 +113,6 @@ main {
     flex-grow: 1;
 }
 
-main:has(.back-link) {
-    text-align: center;
-}
-
 .back-link {
     display: block;
     font-weight: 500;
@@ -139,11 +157,15 @@ main:has(.back-link) {
     font-weight: 500;
     letter-spacing: 0.02em;
     transition: 200ms ease-in;
+    padding: 8px 12px;
+    background-color: #5172e0;
+    color: #f1f4fd;
+    border-radius: 16px;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #747bff;
+    background-color: #747bff;
 }
 
 .nav-link::after {
